@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TechVerse - Início</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="imagens/3.png" alt="" width="100" height="100" class="me-2">
+        <span>Nouvelle Belle</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="carrinho.html">Carrinho</a></li>
+          <li class="nav-item"><a class="nav-link" href="usuario.html">Usuário</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+    <!-- Carrossel -->
+    <div class="banners">
+      <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/verao.png" class="d-block img-fluid object-fit-fill w-100" style="height: 450px;" alt="Banner 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="imagens/30%.png" class="d-block img-fluid object-fit-fill w-100" style="height: 450px;" alt="Banner 2">
+          </div>
+          <div class="carousel-item active">
+            <img src="imagens/slogan.png" class="d-block img-fluid object-fit-fill w-100" style="height: 450px;" alt="Banner 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Produtos -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Produtos em Destaque</h2>
+      <div class="row g-4">
+
+        <!-- Produto 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="imagens/vestiido.jpg" class="card-img-top img-produto" alt="Vestido azul">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Vestido azul estampado</h5>
+              <p class="card-text">Vestido longo estampado azul.
+              </p>
+              <p class="text-success fw-bold fs-5">R$ 550,90</p>
+              <a href="produto1.html" class="btn btn-primary mt-auto">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/produtos/produto2.png" class="card-img-top img-produto" alt="Smartwatch XTime S9">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Smartwatch XTime S9</h5>
+              <p class="card-text">Monitoramento de saúde, resistência à água, e integração com Android e iOS.</p>
+              <p class="text-success fw-bold fs-5">R$ 499,90</p>
+              <a href="produto2.html" class="btn btn-primary mt-auto">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/produtos/produto3.png" class="card-img-top img-produto" alt="Notebook Ultrafino ZenBook">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Notebook Ultrafino ZenBook i7</h5>
+              <p class="card-text">Intel i7, SSD 512 GB, 16 GB RAM. Potência e leveza para profissionais exigentes.</p>
+              <p class="text-success fw-bold fs-5">R$ 5.299,00</p>
+              <a href="produto3.html" class="btn btn-primary mt-auto">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/produtos/produto4.png" class="card-img-top img-produto" alt="Teclado Mecânico RGB">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Teclado Mecânico RGB MK500</h5>
+              <p class="card-text">Switches azuis, iluminação RGB e estrutura reforçada para maior durabilidade.</p>
+              <p class="text-success fw-bold fs-5">R$ 289,90</p>
+              <a href="produto4.html" class="btn btn-primary mt-auto">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/produtos/produto5.png" class="card-img-top img-produto" alt="Câmera de Segurança Wi-Fi">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Câmera de Segurança Wi-Fi Vision360</h5>
+              <p class="card-text">Visão noturna, detecção de movimento e acesso remoto pelo app.</p>
+              <p class="text-success fw-bold fs-5">R$ 150,90</p>
+              <a href="produto5.html" class="btn btn-primary mt-auto">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/produtos/produto6.png" class="card-img-top img-produto" alt="Carregador TurboCharge 33W">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Carregador Rápido TurboCharge 33W</h5>
+              <p class="card-text">Compatível com Android, proteção contra sobreaquecimento e carregamento rápido.</p>
+              <p class="text-success fw-bold fs-5">R$ 99,90</p>
+              <a href="produto6.html" class="btn btn-primary mt-auto">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-2">© 2025 TechVerse. Todos os direitos reservados.</p>
+        <div>
+          <a href="#" class="text-white me-3">Política de Privacidade</a>
+          <a href="#" class="text-white me-3">Termos de Uso</a>
+          <a href="contato.html" class="text-white">Contato</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
