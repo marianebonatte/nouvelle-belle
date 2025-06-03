@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja de Roupas - Selecione a Cor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .produto {
+      margin-bottom: 20px;
+    }
+    .cor-opcao {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .cor-opcao:hover {
+      border-color: #000;
+    }
+  </style>
+  <script>
+    function selecionarCor(cor) {
+      document.getElementById("corSelecionada").innerText = "Cor selecionada: " + cor;
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Escolha a cor da camiseta</h1>
+
+  <div class="produto">
+    <div class="cor-opcao" style="background-color: red;" onclick="selecionarCor('Vermelho')"></div>
+    <div class="cor-opcao" style="background-color: blue;" onclick="selecionarCor('Azul')"></div>
+    <div class="cor-opcao" style="background-color: green;" onclick="selecionarCor('Verde')"></div>
+    <div class="cor-opcao" style="background-color: black;" onclick="selecionarCor('Preto')"></div>
+    <div class="cor-opcao" style="background-color: white; border: 2px solid #000;" onclick="selecionarCor('Branco')"></div>
+  </div>
+
+  <p id="corSelecionada">Cor selecionada: Nenhuma</p>
+
+</body>
+</html>
